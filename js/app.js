@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 'use strict';
-/*
+let score=0;
 let question1 = prompt('do mosab al omari love programing?answer MUST BE  (Y OR N)');
 
 let k=question1.toUpperCase();
@@ -8,6 +8,7 @@ let k=question1.toUpperCase();
 while (k !== 'Y' && k !== 'N') {question1 = prompt('do mosab al omari love programing answer MUST BE  (Y OR N)');
 }
 alert('yes he love programing');
+score=score+1;
 //console.log(question1);
 
 let question2 = prompt('do mosab al omari study Phisics? answer MUST BE  (Y OR N)');
@@ -33,7 +34,7 @@ while (question5.toUpperCase() !== 'Y' && question5.toUpperCase() !== 'N') {ques
 }
 alert('yes 1=2 i saw a fake prove to this equation yesterday XD');
 //console.log(question5);
-*/
+
 
 
 
@@ -56,22 +57,29 @@ if(i===-1){
 } else if(i>0){
   alert('thats right the answer is 10');
 }
-let mosabArray=['cola','seven','tee','coffee',];
 
+let mosabArray=['cola','seven','tee','coffee',];
 console.log(mosabArray);
 console.log(mosabArray.length);
 let a;
-for(a=6;a>-1;a--){
+let t;
+
+for(t=6;t>-1;t--){
   let question7 = prompt('what is my favorit drinks');
-  if(question7 ===mosabArray ){
-    alert('correct answer');
-    break;
+  for(a=0;a<=3;a++){
+    if(question7 === mosabArray[a] )
+    {
+      alert('correct answer');
+      break;
+    }
   }
-  else{
-    alert('wrong answer you still have '+ a+' itrations');
-  }
+  if (a===4) {
+    alert('Wrong Answer ,you still have '+t+ 'time');
+  }else{break;}
+
 }
-alert('you got '+a+'out of 6')
+
+alert('you got '+t+'point out of 6');
 
 
 
