@@ -1,9 +1,7 @@
-/* eslint-disable no-unused-vars */
 'use strict';
-function pairWork() {
-  alert('this  is Mosab website')
 
-  
+function pairWork() {
+  alert('this  is Mosab website');
 }
 pairWork();
 let score=0;
