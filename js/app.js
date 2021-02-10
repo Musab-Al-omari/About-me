@@ -1,9 +1,5 @@
 'use strict';
 
-function pairWork() {
-  alert('this  is Mosab website');
-}
-pairWork();
 let score=0;
 
 let question1 = prompt('do mosab al omari love programing?answer MUST BE  (Y OR N)');
@@ -100,6 +96,6 @@ for(t=6;t>-1;t--){
 }
 
 alert('you got '+ score+' point out of 7');
-pairWork();
+
 
 
