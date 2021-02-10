@@ -1,5 +1,11 @@
 'use strict';
 
+function justAlert() {
+  alert('Welcome to mosab website ');
+}
+
+justAlert();
+
 let score=0;
 
 let question1 = prompt('do mosab al omari love programing?answer MUST BE  (Y OR N)');
