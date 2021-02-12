@@ -13,13 +13,14 @@ let question1 = prompt('do mosab al omari love programing?answer MUST BE  (Y OR 
 while (question1.toUpperCase() !== 'Y' && question1.toUpperCase() !== 'N') {
   question1 = prompt('do mosab al omari love programing answer MUST BE  (Y OR N)');
 }
-// eslint-disable-next-line no-unused-vars
+
 
 if (question1.toUpperCase()==='Y') {score=score+1;}
 
 alert('yes he love programing');
 
-//console.log(question1);
+
+
 
 let question2 = prompt('do mosab al omari study Phisics? answer MUST BE  (Y OR N)');
 while (question2.toUpperCase() !== 'Y' && question2.toUpperCase() !== 'N') {question2 = prompt('do mosab al omari study Phisics? answer MUST BE  (Y OR N)');
@@ -28,7 +29,7 @@ while (question2.toUpperCase() !== 'Y' && question2.toUpperCase() !== 'N') {ques
 if (question2.toUpperCase()==='N') {score=score+1;}
 
 alert('no he study civil engineering');
-//console.log(question2);
+
 
 let question3 = prompt('do the sun have a son? answer MUST BE  (Y OR N)');
 while (question3.toUpperCase() !== 'Y' && question3.toUpperCase() !== 'N') {question3 = prompt('do the sun have a son? answer MUST BE  (Y OR N)');
@@ -37,7 +38,7 @@ while (question3.toUpperCase() !== 'Y' && question3.toUpperCase() !== 'N') {ques
 if (question3.toUpperCase()==='Y') {score=score+1;}
 
 alert('yes ohh maybe no , is the moon the son of sun XD');
-//console.log(question3);
+
 
 let question4 = prompt('Kommst Mosab al omari aus Jordanian?answer MUST BE  (J OR N)');
 while (question4.toUpperCase() !== 'J' && question4.toUpperCase() !== 'N') {question4 = prompt('Kommst Mosab al omari aus Jordanian?answer MUST BE  (J OR N)');
@@ -47,7 +48,7 @@ while (question4.toUpperCase() !== 'J' && question4.toUpperCase() !== 'N') {ques
 if (question4.toUpperCase()==='J') {score=score+1;}
 
 alert('Je,Er kommt aus Jordanian/ the question in the germany ');
-//console.log(question4);
+
 let question5 = prompt('do 1=2? answer MUST BE  (Y OR N)');
 
 while (question5.toUpperCase() !== 'Y' && question5.toUpperCase() !== 'N') {question5 = prompt('do 1=2?answer MUST BE  (Y OR N)');
@@ -55,14 +56,14 @@ while (question5.toUpperCase() !== 'Y' && question5.toUpperCase() !== 'N') {ques
 if (question5.toUpperCase()==='Y') {score=score+1;}
 
 alert('yes 1=2 i saw a fake prove to this equation yesterday XD');
-//console.log(question5);
+
 
 
 
 
 let i;
 for(i=4;i>-1;i--){
-  let question6 = prompt(' Guess my fov number?');
+  let question6 = prompt(' Guess my fov number?','between 0 and 20');
 
   if (question6>10){
     alert('Too High you have '+i+' itration');
